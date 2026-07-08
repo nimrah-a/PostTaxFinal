@@ -1,36 +1,51 @@
-package Entity;
+package entity;
 
 public class JobOffer {
 
-    private String company;
-    private String position;
-    private double annualSalary;
+    private String companyName;
+    private String jobTitle;
     private String state;
+    private double grossAnnualSalary;
 
-    public JobOffer(String company, String position, double annualSalary, String state){
-        this.company = company;
-        this.position = position;
-        this.annualSalary = annualSalary;
+    public JobOffer() {
+    }
+
+    public JobOffer(String companyName, String jobTitle, String state, double grossAnnualSalary) {
+        this.companyName = companyName;
+        this.jobTitle = jobTitle;
         this.state = state;
-
-
+        this.grossAnnualSalary = grossAnnualSalary;
     }
 
-    public String getCompany() {
-        return company;
-
+    public String getCompanyName() {
+        return companyName;
     }
 
-    public String getPosition() {
-        return position;
+    public void setCompanyName(String companyName) {
+        this.companyName = companyName;
     }
 
-    public double getAnnualSalary() {
-        return annualSalary;
-
+    public String getJobTitle() {
+        return jobTitle;
     }
 
-    public String getState(){
+    public void setJobTitle(String jobTitle) {
+        this.jobTitle = jobTitle;
+    }
+
+    public String getState() {
         return state;
+    }
+
+    public void setState(String state) {
+        this.state = state;
+    }
+
+    public double getGrossAnnualSalary() {
+        return grossAnnualSalary;
+    }
+
+    public void setGrossAnnualSalary(double grossAnnualSalary) {
+        this.grossAnnualSalary = grossAnnualSalary;
     }
 }
